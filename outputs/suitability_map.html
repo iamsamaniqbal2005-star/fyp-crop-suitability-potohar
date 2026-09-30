@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7d013983b3ceae4d254d57775719a0fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7d013983b3ceae4d254d57775719a0fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7d013983b3ceae4d254d57775719a0fa = L.map(
+                "map_7d013983b3ceae4d254d57775719a0fa",
+                {
+                    center: [33.38, 73.03400000000002],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc0aa3519a1c22e39680d5366993fc8a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fc0aa3519a1c22e39680d5366993fc8a.addTo(map_7d013983b3ceae4d254d57775719a0fa);
+        
+    
+        function geo_json_d2d29b28b296d2a3070dcf95db63cb8a_styler(feature) {
+            switch(feature.properties.parcel_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#6aa84f", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_d2d29b28b296d2a3070dcf95db63cb8a_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d2d29b28b296d2a3070dcf95db63cb8a = L.geoJson(null, {
+                onEachFeature: geo_json_d2d29b28b296d2a3070dcf95db63cb8a_onEachFeature,
+            
+                style: geo_json_d2d29b28b296d2a3070dcf95db63cb8a_styler,
+            ...{
+}
+        });
+
+        function geo_json_d2d29b28b296d2a3070dcf95db63cb8a_add (data) {
+            geo_json_d2d29b28b296d2a3070dcf95db63cb8a
+                .addData(data);
+        }
+            geo_json_d2d29b28b296d2a3070dcf95db63cb8a_add({"features": [{"geometry": {"coordinates": [[[73.08, 33.64], [73.10666666666667, 33.64], [73.10666666666667, 33.660000000000004], [73.08, 33.660000000000004], [73.08, 33.64]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_00", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.08, 33.660000000000004], [73.10666666666667, 33.660000000000004], [73.10666666666667, 33.68000000000001], [73.08, 33.68000000000001], [73.08, 33.660000000000004]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_01", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.08, 33.68], [73.10666666666667, 33.68], [73.10666666666667, 33.7], [73.08, 33.7], [73.08, 33.68]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_02", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.10666666666667, 33.64], [73.13333333333334, 33.64], [73.13333333333334, 33.660000000000004], [73.10666666666667, 33.660000000000004], [73.10666666666667, 33.64]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_10", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.10666666666667, 33.660000000000004], [73.13333333333334, 33.660000000000004], [73.13333333333334, 33.68000000000001], [73.10666666666667, 33.68000000000001], [73.10666666666667, 33.660000000000004]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_11", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.10666666666667, 33.68], [73.13333333333334, 33.68], [73.13333333333334, 33.7], [73.10666666666667, 33.7], [73.10666666666667, 33.68]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_12", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.13333333333333, 33.64], [73.16, 33.64], [73.16, 33.660000000000004], [73.13333333333333, 33.660000000000004], [73.13333333333333, 33.64]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_20", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.13333333333333, 33.660000000000004], [73.16, 33.660000000000004], [73.16, 33.68000000000001], [73.13333333333333, 33.68000000000001], [73.13333333333333, 33.660000000000004]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_21", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.13333333333333, 33.68], [73.16, 33.68], [73.16, 33.7], [73.13333333333333, 33.7], [73.13333333333333, 33.68]]], "type": "Polygon"}, "properties": {"field_id": "isb_narc", "parcel_id": "isb_narc_22", "scores": {"chickpea": 35.70000076293945, "groundnut": 33.400001525878906, "maize": 71.19999694824219, "mustard": 12.399999618530273, "olive": 16.200000762939453, "wheat": 54.70000076293945}, "top_crop": "maize", "top_score": 71.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.1, 33.42], [73.14999999999999, 33.42], [73.14999999999999, 33.45333333333333], [73.1, 33.45333333333333], [73.1, 33.42]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_00", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.1, 33.45333333333333], [73.14999999999999, 33.45333333333333], [73.14999999999999, 33.486666666666665], [73.1, 33.486666666666665], [73.1, 33.45333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_01", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.1, 33.48666666666667], [73.14999999999999, 33.48666666666667], [73.14999999999999, 33.52], [73.1, 33.52], [73.1, 33.48666666666667]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_02", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.14999999999999, 33.42], [73.19999999999999, 33.42], [73.19999999999999, 33.45333333333333], [73.14999999999999, 33.45333333333333], [73.14999999999999, 33.42]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_10", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.14999999999999, 33.45333333333333], [73.19999999999999, 33.45333333333333], [73.19999999999999, 33.486666666666665], [73.14999999999999, 33.486666666666665], [73.14999999999999, 33.45333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_11", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.14999999999999, 33.48666666666667], [73.19999999999999, 33.48666666666667], [73.19999999999999, 33.52], [73.14999999999999, 33.52], [73.14999999999999, 33.48666666666667]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_12", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.2, 33.42], [73.25, 33.42], [73.25, 33.45333333333333], [73.2, 33.45333333333333], [73.2, 33.42]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_20", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.2, 33.45333333333333], [73.25, 33.45333333333333], [73.25, 33.486666666666665], [73.2, 33.486666666666665], [73.2, 33.45333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_21", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.2, 33.48666666666667], [73.25, 33.48666666666667], [73.25, 33.52], [73.2, 33.52], [73.2, 33.48666666666667]]], "type": "Polygon"}, "properties": {"field_id": "rwp_rawat", "parcel_id": "rwp_rawat_22", "scores": {"chickpea": 36.70000076293945, "groundnut": 46.29999923706055, "maize": 85.4000015258789, "mustard": 13.800000190734863, "olive": 16.899999618530273, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.4}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.25, 33.22], [73.3, 33.22], [73.3, 33.24666666666666], [73.25, 33.24666666666666], [73.25, 33.22]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_00", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.25, 33.24666666666666], [73.3, 33.24666666666666], [73.3, 33.273333333333326], [73.25, 33.273333333333326], [73.25, 33.24666666666666]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_01", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.25, 33.27333333333333], [73.3, 33.27333333333333], [73.3, 33.3], [73.25, 33.3], [73.25, 33.27333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_02", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.3, 33.22], [73.35, 33.22], [73.35, 33.24666666666666], [73.3, 33.24666666666666], [73.3, 33.22]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_10", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.3, 33.24666666666666], [73.35, 33.24666666666666], [73.35, 33.273333333333326], [73.3, 33.273333333333326], [73.3, 33.24666666666666]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_11", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.3, 33.27333333333333], [73.35, 33.27333333333333], [73.35, 33.3], [73.3, 33.3], [73.3, 33.27333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_12", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.35000000000001, 33.22], [73.4, 33.22], [73.4, 33.24666666666666], [73.35000000000001, 33.24666666666666], [73.35000000000001, 33.22]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_20", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.35000000000001, 33.24666666666666], [73.4, 33.24666666666666], [73.4, 33.273333333333326], [73.35000000000001, 33.273333333333326], [73.35000000000001, 33.24666666666666]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_21", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[73.35000000000001, 33.27333333333333], [73.4, 33.27333333333333], [73.4, 33.3], [73.35000000000001, 33.3], [73.35000000000001, 33.27333333333333]]], "type": "Polygon"}, "properties": {"field_id": "rwp_gujarkhan", "parcel_id": "rwp_gujarkhan_22", "scores": {"chickpea": 36.70000076293945, "groundnut": 42.0, "maize": 85.30000305175781, "mustard": 13.800000190734863, "olive": 16.700000762939453, "wheat": 55.900001525878906}, "top_crop": "maize", "top_score": 85.3}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.6, 33.5], [72.64999999999999, 33.5], [72.64999999999999, 33.53333333333333], [72.6, 33.53333333333333], [72.6, 33.5]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_00", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.6, 33.53333333333333], [72.64999999999999, 33.53333333333333], [72.64999999999999, 33.56666666666666], [72.6, 33.56666666666666], [72.6, 33.53333333333333]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_01", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.6, 33.56666666666667], [72.64999999999999, 33.56666666666667], [72.64999999999999, 33.6], [72.6, 33.6], [72.6, 33.56666666666667]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_02", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.64999999999999, 33.5], [72.69999999999999, 33.5], [72.69999999999999, 33.53333333333333], [72.64999999999999, 33.53333333333333], [72.64999999999999, 33.5]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_10", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.64999999999999, 33.53333333333333], [72.69999999999999, 33.53333333333333], [72.69999999999999, 33.56666666666666], [72.64999999999999, 33.56666666666666], [72.64999999999999, 33.53333333333333]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_11", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.64999999999999, 33.56666666666667], [72.69999999999999, 33.56666666666667], [72.69999999999999, 33.6], [72.64999999999999, 33.6], [72.64999999999999, 33.56666666666667]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_12", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.7, 33.5], [72.75, 33.5], [72.75, 33.53333333333333], [72.7, 33.53333333333333], [72.7, 33.5]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_20", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.7, 33.53333333333333], [72.75, 33.53333333333333], [72.75, 33.56666666666666], [72.7, 33.56666666666666], [72.7, 33.53333333333333]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_21", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.7, 33.56666666666667], [72.75, 33.56666666666667], [72.75, 33.6], [72.7, 33.6], [72.7, 33.56666666666667]]], "type": "Polygon"}, "properties": {"field_id": "atk_fatehjang", "parcel_id": "atk_fatehjang_22", "scores": {"chickpea": 27.799999237060547, "groundnut": 29.600000381469727, "maize": 62.20000076293945, "mustard": 11.699999809265137, "olive": 48.20000076293945, "wheat": 54.900001525878906}, "top_crop": "maize", "top_score": 62.2}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.8, 32.9], [72.85, 32.9], [72.85, 32.93333333333333], [72.8, 32.93333333333333], [72.8, 32.9]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_00", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.8, 32.93333333333333], [72.85, 32.93333333333333], [72.85, 32.96666666666666], [72.8, 32.96666666666666], [72.8, 32.93333333333333]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_01", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.8, 32.96666666666667], [72.85, 32.96666666666667], [72.85, 33.0], [72.8, 33.0], [72.8, 32.96666666666667]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_02", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.85, 32.9], [72.89999999999999, 32.9], [72.89999999999999, 32.93333333333333], [72.85, 32.93333333333333], [72.85, 32.9]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_10", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.85, 32.93333333333333], [72.89999999999999, 32.93333333333333], [72.89999999999999, 32.96666666666666], [72.85, 32.96666666666666], [72.85, 32.93333333333333]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_11", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.85, 32.96666666666667], [72.89999999999999, 32.96666666666667], [72.89999999999999, 33.0], [72.85, 33.0], [72.85, 32.96666666666667]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_12", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.9, 32.9], [72.95, 32.9], [72.95, 32.93333333333333], [72.9, 32.93333333333333], [72.9, 32.9]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_20", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.9, 32.93333333333333], [72.95, 32.93333333333333], [72.95, 32.96666666666666], [72.9, 32.96666666666666], [72.9, 32.93333333333333]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_21", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}, {"geometry": {"coordinates": [[[72.9, 32.96666666666667], [72.95, 32.96666666666667], [72.95, 33.0], [72.9, 33.0], [72.9, 32.96666666666667]]], "type": "Polygon"}, "properties": {"field_id": "ckw_chakwal", "parcel_id": "ckw_chakwal_22", "scores": {"chickpea": 16.600000381469727, "groundnut": 34.900001525878906, "maize": 80.0, "mustard": 13.899999618530273, "olive": 50.70000076293945, "wheat": 34.0}, "top_crop": "maize", "top_score": 80.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d2d29b28b296d2a3070dcf95db63cb8a.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["parcel_id", "top_crop", "top_score", "scores"];
+    let aliases = ["parcel_id", "top_crop", "top_score", "scores"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_d2d29b28b296d2a3070dcf95db63cb8a.addTo(map_7d013983b3ceae4d254d57775719a0fa);
+        
+</script>
+</html>

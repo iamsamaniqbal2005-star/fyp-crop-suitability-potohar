@@ -9,3 +9,5 @@ data/raw/
 data/processed/
 *.tif
 *.nc
+models/
+*.joblib

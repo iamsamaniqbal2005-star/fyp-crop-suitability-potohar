@@ -24,74 +24,265 @@
       "ph_optmin": "optimal minimum pH",
       "ph_optmax": "optimal maximum pH",
       "ph_absmax": "absolute maximum pH"
-    }
+    },
+    "sowing_note": "sowing = assumed typical Potohar sowing date and cycle length used to define the growing window for feature extraction; edit as needed."
   },
   "crops": {
     "wheat": {
       "scientific_name": "Triticum aestivum",
       "life_cycle": "annual",
       "season_potohar": "Rabi (sow Oct-Dec, harvest Apr-May)",
-      "temperature": {"tmin": 5, "topmin": 15, "topmax": 23, "tmax": 30, "ktmp": -2},
-      "rainfall": {"rmin": 250, "ropmin": 450, "ropmax": 650, "rmax": 1750},
-      "cycle": {"gmin": 100, "gmax": 280},
-      "ph": {"ph_absmin": 5.0, "ph_optmin": 6.0, "ph_optmax": 7.5, "ph_absmax": 8.5},
-      "soil": {"texture": ["medium", "heavy"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 5,
+        "topmin": 15,
+        "topmax": 23,
+        "tmax": 30,
+        "ktmp": -2
+      },
+      "rainfall": {
+        "rmin": 250,
+        "ropmin": 450,
+        "ropmax": 650,
+        "rmax": 1750
+      },
+      "cycle": {
+        "gmin": 100,
+        "gmax": 280
+      },
+      "ph": {
+        "ph_absmin": 5.0,
+        "ph_optmin": 6.0,
+        "ph_optmax": 7.5,
+        "ph_absmax": 8.5
+      },
+      "soil": {
+        "texture": [
+          "medium",
+          "heavy"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 11,
+        "day": 1,
+        "cycle_days": 150,
+        "season": "rabi"
+      }
     },
     "maize": {
       "scientific_name": "Zea mays",
       "life_cycle": "annual",
       "season_potohar": "Kharif (sow Jul-Aug; spring crop Feb-Mar)",
-      "temperature": {"tmin": 10, "topmin": 18, "topmax": 33, "tmax": 47, "ktmp": 0},
-      "rainfall": {"rmin": 400, "ropmin": 600, "ropmax": 1100, "rmax": 1800},
-      "cycle": {"gmin": 65, "gmax": 365},
-      "ph": {"ph_absmin": 4.5, "ph_optmin": 5.5, "ph_optmax": 7.5, "ph_absmax": 8.0},
-      "soil": {"texture": ["light", "medium"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 10,
+        "topmin": 18,
+        "topmax": 33,
+        "tmax": 47,
+        "ktmp": 0
+      },
+      "rainfall": {
+        "rmin": 400,
+        "ropmin": 600,
+        "ropmax": 1100,
+        "rmax": 1800
+      },
+      "cycle": {
+        "gmin": 65,
+        "gmax": 365
+      },
+      "ph": {
+        "ph_absmin": 4.5,
+        "ph_optmin": 5.5,
+        "ph_optmax": 7.5,
+        "ph_absmax": 8.0
+      },
+      "soil": {
+        "texture": [
+          "light",
+          "medium"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 7,
+        "day": 1,
+        "cycle_days": 110,
+        "season": "kharif"
+      }
     },
     "groundnut": {
       "scientific_name": "Arachis hypogaea",
       "life_cycle": "annual",
       "season_potohar": "Kharif (sow Jun-Jul, harvest Oct-Nov)",
-      "temperature": {"tmin": 14, "topmin": 22, "topmax": 28, "tmax": 35, "ktmp": 0},
-      "rainfall": {"rmin": 400, "ropmin": 600, "ropmax": 1200, "rmax": 1600},
-      "cycle": {"gmin": 90, "gmax": 130},
-      "ph": {"ph_absmin": 4.3, "ph_optmin": 5.5, "ph_optmax": 7.0, "ph_absmax": 8.0},
-      "soil": {"texture": ["light"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 14,
+        "topmin": 22,
+        "topmax": 28,
+        "tmax": 35,
+        "ktmp": 0
+      },
+      "rainfall": {
+        "rmin": 400,
+        "ropmin": 600,
+        "ropmax": 1200,
+        "rmax": 1600
+      },
+      "cycle": {
+        "gmin": 90,
+        "gmax": 130
+      },
+      "ph": {
+        "ph_absmin": 4.3,
+        "ph_optmin": 5.5,
+        "ph_optmax": 7.0,
+        "ph_absmax": 8.0
+      },
+      "soil": {
+        "texture": [
+          "light"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 6,
+        "day": 25,
+        "cycle_days": 120,
+        "season": "kharif"
+      }
     },
     "mustard": {
       "scientific_name": "Brassica juncea",
       "life_cycle": "annual",
       "season_potohar": "Rabi (sow Sep-Oct, harvest Feb-Mar)",
-      "temperature": {"tmin": 8, "topmin": 15, "topmax": 25, "tmax": 35, "ktmp": -2},
-      "rainfall": {"rmin": 300, "ropmin": 500, "ropmax": 1000, "rmax": 1500},
-      "cycle": {"gmin": 90, "gmax": 150},
-      "ph": {"ph_absmin": 4.3, "ph_optmin": 5.5, "ph_optmax": 7.5, "ph_absmax": 8.3},
-      "soil": {"texture": ["medium"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 8,
+        "topmin": 15,
+        "topmax": 25,
+        "tmax": 35,
+        "ktmp": -2
+      },
+      "rainfall": {
+        "rmin": 300,
+        "ropmin": 500,
+        "ropmax": 1000,
+        "rmax": 1500
+      },
+      "cycle": {
+        "gmin": 90,
+        "gmax": 150
+      },
+      "ph": {
+        "ph_absmin": 4.3,
+        "ph_optmin": 5.5,
+        "ph_optmax": 7.5,
+        "ph_absmax": 8.3
+      },
+      "soil": {
+        "texture": [
+          "medium"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 10,
+        "day": 10,
+        "cycle_days": 130,
+        "season": "rabi"
+      }
     },
     "chickpea": {
       "scientific_name": "Cicer arietinum",
       "life_cycle": "annual",
       "season_potohar": "Rabi (sow Oct-Nov, harvest Mar-Apr)",
-      "temperature": {"tmin": 5, "topmin": 15, "topmax": 25, "tmax": 35, "ktmp": -2},
-      "rainfall": {"rmin": 300, "ropmin": 600, "ropmax": 1000, "rmax": 1600},
-      "cycle": {"gmin": 100, "gmax": 180},
-      "ph": {"ph_absmin": 5.0, "ph_optmin": 6.0, "ph_optmax": 7.5, "ph_absmax": 8.5},
-      "soil": {"texture": ["light", "medium"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 5,
+        "topmin": 15,
+        "topmax": 25,
+        "tmax": 35,
+        "ktmp": -2
+      },
+      "rainfall": {
+        "rmin": 300,
+        "ropmin": 600,
+        "ropmax": 1000,
+        "rmax": 1600
+      },
+      "cycle": {
+        "gmin": 100,
+        "gmax": 180
+      },
+      "ph": {
+        "ph_absmin": 5.0,
+        "ph_optmin": 6.0,
+        "ph_optmax": 7.5,
+        "ph_absmax": 8.5
+      },
+      "soil": {
+        "texture": [
+          "light",
+          "medium"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 10,
+        "day": 25,
+        "cycle_days": 150,
+        "season": "rabi"
+      }
     },
     "olive": {
       "scientific_name": "Olea europaea",
       "life_cycle": "perennial",
       "season_potohar": "Perennial (flowering Mar-Apr, harvest Oct-Dec)",
-      "temperature": {"tmin": 5, "topmin": 15, "topmax": 25, "tmax": 40, "ktmp": -7},
-      "rainfall": {"rmin": 200, "ropmin": 600, "ropmax": 800, "rmax": 1500},
-      "cycle": {"gmin": 250, "gmax": 365},
-      "ph": {"ph_absmin": 5.5, "ph_optmin": 6.0, "ph_optmax": 7.5, "ph_absmax": 8.5},
-      "soil": {"texture": ["light", "medium"], "drainage": "well", "depth": "medium"},
-      "verified": false
+      "temperature": {
+        "tmin": 5,
+        "topmin": 15,
+        "topmax": 25,
+        "tmax": 40,
+        "ktmp": -7
+      },
+      "rainfall": {
+        "rmin": 200,
+        "ropmin": 600,
+        "ropmax": 800,
+        "rmax": 1500
+      },
+      "cycle": {
+        "gmin": 250,
+        "gmax": 365
+      },
+      "ph": {
+        "ph_absmin": 5.5,
+        "ph_optmin": 6.0,
+        "ph_optmax": 7.5,
+        "ph_absmax": 8.5
+      },
+      "soil": {
+        "texture": [
+          "light",
+          "medium"
+        ],
+        "drainage": "well",
+        "depth": "medium"
+      },
+      "verified": false,
+      "sowing": {
+        "month": 1,
+        "day": 1,
+        "cycle_days": 365,
+        "season": "perennial"
+      }
     }
   }
 }

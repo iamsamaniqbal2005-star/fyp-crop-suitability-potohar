@@ -1,0 +1,136 @@
+parcel_id,field_id,rank,crop,ml_score,rule_score,class
+atk_fatehjang_00,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_00,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_00,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_01,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_01,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_01,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_02,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_02,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_02,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_10,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_10,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_10,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_11,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_11,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_11,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_12,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_12,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_12,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_20,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_20,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_20,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_21,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_21,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_21,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+atk_fatehjang_22,atk_fatehjang,1,maize,62.2,46.1,Suitable
+atk_fatehjang_22,atk_fatehjang,2,wheat,54.9,27.5,Moderately suitable
+atk_fatehjang_22,atk_fatehjang,3,olive,48.2,44.6,Moderately suitable
+ckw_chakwal_00,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_00,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_00,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_01,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_01,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_01,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_02,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_02,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_02,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_10,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_10,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_10,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_11,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_11,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_11,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_12,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_12,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_12,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_20,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_20,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_20,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_21,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_21,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_21,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+ckw_chakwal_22,ckw_chakwal,1,maize,80.0,60.3,Suitable
+ckw_chakwal_22,ckw_chakwal,2,olive,50.7,45.7,Moderately suitable
+ckw_chakwal_22,ckw_chakwal,3,groundnut,34.9,33.6,Moderately suitable
+isb_narc_00,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_00,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_00,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_01,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_01,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_01,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_02,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_02,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_02,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_10,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_10,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_10,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_11,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_11,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_11,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_12,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_12,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_12,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_20,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_20,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_20,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_21,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_21,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_21,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+isb_narc_22,isb_narc,1,maize,71.2,66.1,Suitable
+isb_narc_22,isb_narc,2,wheat,54.7,33.3,Moderately suitable
+isb_narc_22,isb_narc,3,chickpea,35.7,29.5,Moderately suitable
+rwp_gujarkhan_00,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_00,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_00,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_01,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_01,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_01,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_02,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_02,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_02,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_10,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_10,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_10,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_11,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_11,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_11,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_12,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_12,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_12,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_20,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_20,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_20,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_21,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_21,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_21,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_gujarkhan_22,rwp_gujarkhan,1,maize,85.3,77.4,Suitable
+rwp_gujarkhan_22,rwp_gujarkhan,2,wheat,55.9,34.5,Moderately suitable
+rwp_gujarkhan_22,rwp_gujarkhan,3,groundnut,42.0,40.6,Moderately suitable
+rwp_rawat_00,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_00,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_00,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_01,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_01,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_01,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_02,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_02,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_02,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_10,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_10,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_10,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_11,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_11,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_11,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_12,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_12,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_12,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_20,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_20,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_20,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_21,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_21,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_21,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable
+rwp_rawat_22,rwp_rawat,1,maize,85.4,77.4,Suitable
+rwp_rawat_22,rwp_rawat,2,wheat,55.9,34.5,Moderately suitable
+rwp_rawat_22,rwp_rawat,3,groundnut,46.3,44.6,Moderately suitable

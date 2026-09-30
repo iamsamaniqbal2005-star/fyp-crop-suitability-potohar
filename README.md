@@ -1,20 +1,27 @@
-# FYP: Crop Suitability Mapping for the Potohar Region (Rawalpindi/Islamabad)
+# Intelligent Crop Suitability Assessment – Potohar (Rawalpindi/Islamabad)
 
-Crops: Wheat, Maize, Groundnut, Mustard, Chickpea, Olive (FAO EcoCrop requirements).
+Fuses climate (NASA POWER), soil (SoilGrids), water (IRSA/WAPDA/PCRWR table) and Sentinel-2 NDVI into a
+land profile per parcel, filters crops with FAO EcoCrop rules, then ranks them with ML.
+Crops: Wheat, Maize, Groundnut, Mustard, Chickpea, Olive.
 
-## Layout
-- `config/study_area.json` – region + target field bounding boxes (`[west, south, east, north]`, EPSG:4326)
-- `config/ecocrop.json` – EcoCrop temperature / rainfall / cycle / pH ranges per crop
-- `src/config_loader.py` – loads and validates both configs (`python src/config_loader.py`)
-- `notebooks/00_setup.ipynb` – Colab/Kaggle bootstrap (clone repo, install deps, validate config)
-- `data/` – local data (git-ignored)
+## Pipeline (`python src/run_pipeline.py`)
+| Layer | Module | Output |
+|---|---|---|
+| 1 Acquisition | `fetch_power.py`, `fetch_soil.py`, `fetch_ndvi.py`, `water.py` | `data/raw/*`, `data/external/water_indices.csv` |
+| 2-3 Features / land profile | `parcels.py`, `features.py` | `data/processed/land_profiles.csv` |
+| 4a Rule filter | `ecocrop_model.py` (EcoCrop trapezoids, Liebig minimum) | 0-100 score + class |
+| 4b ML | `train.py` – RF/SVM/DNN (class), LASSO/XGBoost/RF (score) | `models/`, `outputs/metrics.json` |
+| 5 Decision support | `recommend.py` | `outputs/ranked_crops.csv`, `suitability.geojson`, `suitability_map.html`, `suitability_by_crop.png` |
+
+Config: `config/study_area.json` (field boxes, split into 3x3 parcels), `config/ecocrop.json` (crop requirements + sowing windows).
 
 ## Setup
-Local: `python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt`
-Colab/Kaggle: open `notebooks/00_setup.ipynb` and set `REPO_URL` in the first cell.
+`pip install -r requirements.txt`, then `python src/run_pipeline.py` (first run downloads data; later runs use the cache, `--refresh` re-downloads).
 
-## Status
-- [x] Phase 1.2 configs drafted
-- [ ] EcoCrop values verified against official FAO records (`verified: false` in JSON)
-- [ ] Real field bounding boxes replace placeholders
-- [ ] Repo pushed to GitHub/GitLab; teammates invited
+## Known limitations (read before quoting results)
+- **Labels are rule-derived** (FAO EcoCrop scores), as the project plan prescribes. ML metrics therefore measure how well models reproduce the rules from the fused features, **not** agronomic truth. Real validation needs field/agronomist labels or historical crop maps.
+- Climate is NASA POWER (~50 km grid) so parcels within one field share climate; parcels differ only by NDVI.
+- **Water table is an assumed barani (rainfed) default** – fill `data/external/water_indices.csv` from IRSA/WAPDA/PCRWR. (Those are Indus-basin/canal sources; Potohar is mostly rainfed, so their relevance here is limited.)
+- EcoCrop values in `config/ecocrop.json` are unverified (`verified: false`); field boxes are placeholders.
+- The document's example crops (rice, cotton, sugarcane) are Sindh/canal crops; this repo uses the six Potohar crops chosen in Phase 1.
+- Government UAV imagery is not included; to use it, supply `data/external/ndvi_uav.csv` (same columns as `data/raw/ndvi.csv`) – hook not yet wired.

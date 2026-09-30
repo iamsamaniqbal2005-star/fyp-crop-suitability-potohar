@@ -1,0 +1,16 @@
+field_id,season,irrigation_mm,supply_index,shortage_pct,salinity_risk,waterlogging_risk,source
+isb_narc,rabi,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+isb_narc,kharif,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+isb_narc,perennial,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_rawat,rabi,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_rawat,kharif,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_rawat,perennial,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_gujarkhan,rabi,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_gujarkhan,kharif,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+rwp_gujarkhan,perennial,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+atk_fatehjang,rabi,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+atk_fatehjang,kharif,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+atk_fatehjang,perennial,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+ckw_chakwal,rabi,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+ckw_chakwal,kharif,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
+ckw_chakwal,perennial,0,0.0,0.0,0.1,0.05,ASSUMED barani default - replace
