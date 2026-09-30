@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "description": "Study area and target-field bounding boxes for the Potohar (Rawalpindi/Islamabad) region.",
+    "crs": "EPSG:4326",
+    "bbox_order": ["west_lon", "south_lat", "east_lon", "north_lat"],
+    "status": "PLACEHOLDER field boxes - replace with your real field coordinates (draw on geojson.io / Google Earth and copy the extent)."
+  },
+  "region": {
+    "name": "Potohar Plateau (Rawalpindi / Islamabad)",
+    "bbox": [72.30, 32.80, 73.55, 33.95]
+  },
+  "fields": [
+    {
+      "id": "isb_narc",
+      "name": "Islamabad - NARC / Chak Shahzad farmland",
+      "district": "Islamabad",
+      "bbox": [73.08, 33.64, 73.16, 33.70],
+      "candidate_crops": ["wheat", "maize", "mustard", "chickpea"]
+    },
+    {
+      "id": "rwp_rawat",
+      "name": "Rawalpindi - Rawat / Kallar Syedan belt",
+      "district": "Rawalpindi",
+      "bbox": [73.10, 33.42, 73.25, 33.52],
+      "candidate_crops": ["wheat", "maize", "groundnut", "mustard"]
+    },
+    {
+      "id": "rwp_gujarkhan",
+      "name": "Rawalpindi - Gujar Khan",
+      "district": "Rawalpindi",
+      "bbox": [73.25, 33.22, 73.40, 33.30],
+      "candidate_crops": ["wheat", "groundnut", "chickpea", "mustard"]
+    },
+    {
+      "id": "atk_fatehjang",
+      "name": "Attock - Fateh Jang (olive / Potohar rainfed)",
+      "district": "Attock",
+      "bbox": [72.60, 33.50, 72.75, 33.60],
+      "candidate_crops": ["olive", "wheat", "chickpea"]
+    },
+    {
+      "id": "ckw_chakwal",
+      "name": "Chakwal - rainfed Potohar (groundnut / chickpea)",
+      "district": "Chakwal",
+      "bbox": [72.80, 32.90, 72.95, 33.00],
+      "candidate_crops": ["groundnut", "chickpea", "wheat", "olive"]
+    }
+  ]
+}
